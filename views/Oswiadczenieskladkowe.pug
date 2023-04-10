@@ -1,0 +1,201 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  style
+    include Oswiadczenieskladkowe.css
+  title omg
+div
+h1
+  center
+    b O&sacute;wiadczenie sk&lstrok;adkowe
+h2(style='width:100%')
+  | Ja, #{imieINazwisko}, pos&lstrok;uguj&aogon;cy/a si&eogon; numerem PESEL: #{numerPESEL}, os&#x301;wiadczam, z&#x307;e na
+  | dzie&nacute; #{dataZlozenia}: 
+table(style='width:100%')
+  tr
+    td(style='width:5%')
+      center  1 
+    td(style='width:85%') Jestem uczniem szko&lstrok;y ponadpodstawowej lub studentem i nie uko&nacute;czy&lstrok;am/&lstrok;em 26 lat
+    td(style='width:10%')     
+      center #{answer[0]}
+  tr
+    td
+      center  2 
+    td
+      | Nie pracuj&eogon;, nie jestem zarejestrowany/na jako osoba bezrobotna i nie jestem obj&eogon;ty/a ubezpieczeniem
+      | spo&lstrok;ecznym z &zdot;adnego tytu&lstrok;u
+    td   
+      center #{answer[1]}
+  tr
+    td
+      center  3 
+    td
+      | Jestem jednocze&sacute;nie zatrudniony/na na podstawie umowy o prac&eogon; / umowy zlecenie / umowy agencyjnej
+    td   
+      center #{answer[2]}
+  tr
+    td
+      center  4 
+    td  Jestem obj&eogon;ty jedynie ubezpieczeniem KRUS (ubezpieczenie rolnicze)
+    td   
+      center #{answer[3]}
+  tr
+    td
+      center  5 
+    td  Jestem emerytem lub rencist&aogon; 
+    td   
+      center #{answer[4]}
+  tr
+    td
+      center  6 
+    td
+      | Jestem ju&zdot; ubezpieczona/ny (ubezpieczenie emerytalne i rentowe) z tytu&lstrok;u prowadzenia dzia&lstrok;alno&sacute;ci
+      | gospodarczej
+    td   
+      center #{answer[5]}
+  tr
+    td
+      center  7 
+    td
+      | Chc&eogon; podlega&cacute; dobrowolnemu ubezpieczeniu chorobowemu z zawartej z Joy Job Sp. z o.o. umowy zlecenie
+    td   
+      center #{answer[6]}
+  tr
+    td
+      center  8 
+    td
+      | Mam orzeczenie o stopniu niepe&lstrok;nosprawno&sacute;ci. Stopie&nacute; niepe&lstrok;nosprawno&sacute;ci:#{stopienNiepelnosprawnosci}
+    td   
+      center #{answer[7]}
+  tr
+    td
+      center  9 
+    td
+      | Jestem zatrudniony/a na umowe o prac&eogon;/umowe zlecenie lub umow&eogon; agencyjn&aogon; gdzie op&lstrok;acam sk&lstrok;adki
+      | emerytalno-rentowe, a moje wynagrodzenie w kwocie brutto wynosi co najmniej minimalne wynagrodzenie (tj.
+      | w 2023 roku do 31 czerwca: 3490,00 z&lstrok;)
+    td   
+      center #{answer[8]}
+  tr
+    td
+      center  10 
+    td
+      | Jestem zatrudniony/a na umowe o prac&eogon;/umowe zlecenie lub umow&eogon; agencyjn&aogon; gdzie op&lstrok;acam sk&lstrok;adki
+      | emerytalno-rentowe, a moje wynagrodzenie w kwocie brutto wynosi mniej ni&zdot; minimalne wynagrodzenie (tj. w
+      | 2023 roku do 31 czerwca: 3490,00 z&lstrok;)
+    td   
+      center #{answer[9]}
+  tr
+    td
+      center  11 
+    td Przebywam na urlopie bezp&lstrok;atnym, od #{od} do #{dod}
+    td   
+      center #{answer[10]}
+  tr
+    td
+      center  12 
+    td Przebywam na zwolnieniu lekarskim, od #{od} do #{dod}
+    td   
+      center #{answer[11]}
+  tr
+    td
+      center  13 
+    td Przebywam na urlopie #{RodzajUrlopu}, od #{od} do #{dod}
+    td   
+      center #{answer[12]}
+  tr
+    td
+      center  14 
+    td Zakres umowy pokrywa si&eogon; z zakresem prowadzonej dzia&lstrok;alno&sacute;ci gospodarczej
+    td   
+      center #{answer[13]}
+  tr
+    td
+      center  15 
+    td
+      | Op&lstrok;acam sk&lstrok;adki od preferencyjnej podstawy wynosz&aogon;cej 30% minimalnego wynagrodzenia
+    td   
+      center #{answer[14]}
+  tr
+    td
+      center  16 
+    td
+      | Odprowadzam sk&lstrok;adki od podstawy wynosz&aogon;cej co najmniej kwot&eogon; minimalnego wynagrodzenia
+    td  
+      center #{answer[15]}
+  tr
+    td
+      center  17 
+    td
+      | Op&lstrok;acam standardowe sk&lstrok;adki - od podstawy wymiaru wynosz&aogon;cej co najmniej 60% prognozowanego przeci&eogon;tnego
+      | wynagrodzenia miesi&eogon;cznego
+    td 
+      center #{answer[16]}
+p(style = 'margin-top:70px;padding-top:30px')
+  | Na podstawie wybranych odpowiedzi b&eogon;dzie Pan/Pani zg&lstrok;oszony/a do Zak&lstrok;adu Ubezpiecze&nacute; Spo&lstrok;ecznych (ZUS) z tytu&lstrok;u
+  | umowy zlecenia w firmie Joy Job Sp. z o.o do ubezpiecze&nacute;:
+table(style='width:100%')
+  tr
+    td(style='width:20%')  Ubezpieczenie spo&lstrok;eczne i zdrowotne 
+    td(style='width:60%')
+      center  Szczeg&oacute;&lstrok;y
+    td(style='width:20%')
+      center Obowi&aogon;zuje
+  tr
+    td
+      | Emerytalne, rentowe,
+      | dobrowolne chorobowe,
+      | zdrowotne
+    td
+      | Z uzyskanego miesi&eogon;cznego przychodu brutto z tytu&lstrok;u umowy zlecenia w firmie Joy Job Sp. z o.o b&eogon;dzie
+      | potr&aogon;cana sk&lstrok;adka na ubezpieczenia: emerytalne, rentowe, dobrowolne chorobowe oraz zdrowotne. Zg&lstrok;oszenia
+      | do ZUS w raporcie ZUS ZUA
+    td   
+      center #{answer[17]}
+  tr
+    td
+      | Emerytalne, rentowe, bez
+      | chorobowego, zdrowotne
+    td
+      | Z uzyskanego miesi&eogon;cznego przychodu brutto z tytu&lstrok;u umowy zlecenia w firmie Joy Job Sp. z o.o b&eogon;dzie
+      | potr&aogon;cana sk&lstrok;adka na ubezpieczenia: emerytalne, rentowe oraz zdrowotne. Zg&lstrok;oszenia do ZUS w raporcie ZUS
+      | ZUA
+    td   
+      center #{answer[18]}
+  tr
+    td Tylko zdrowotne 
+    td
+      | Z uzyskanego miesi&eogon;cznego przychodu brutto z tytu&lstrok;u umowy zlecenia w firmie Joy Job Sp. z o.o b&eogon;dzie
+      | potr&aogon;cana tylko sk&lstrok;adka na zdrowotne.Zg&lstrok;oszenia do ZUS w raporcie ZUS ZZA
+    td   
+      center #{answer[19]}
+  tr
+    td Brak obowi&aogon;zku zg&lstrok;oszenia do ZUS
+    td
+      | Ucze&nacute; i student jest zwolniony z op&lstrok;acania sk&lstrok;adek na ubezpieczenie spo&lstrok;eczne i zdrowotne. Z tytu&lstrok;u
+      | statusu ucznia/studenta nie b&eogon;dzie zg&lstrok;oszenia do ZUS, oraz nie b&eogon;d&aogon; odci&aogon;gane sk&lstrok;adki na te
+      | ubezpieczenia
+    td   
+      center #{answer[20]}
+table(style='width:100%;margin-top:20px').column
+  tr.column
+    td(style='width:75%').column
+      | O&sacute;wiadczam, &zdot;e powy&zdot;sze dane s&aogon; zgodne ze stanem faktycznym. Jestem &sacute;wiadomy/a odpowiedzialno&sacute;ci
+      | karnej
+      | za podanie nieprawdy lub zatajenie prawdy. Przyjmuj&eogon; pe&lstrok;n&aogon; odpowiedzialno&sacute;&cacute; i konsekwencje podatkowe
+      | za
+      | fakty niezgodne z o&sacute;wiadczeniem. W przypadku jakichkolwiek zmian dotycz&aogon;cych tre&sacute;ci niniejszego
+      | o&sacute;wiadczenia zobowi&aogon;zuj&eogon; si&eogon; do natychmiastowej ich zmiany w aplikacji Joy Job Sp. z o.o.
+      | Jednocze&sacute;nie
+      | przyjmuj&eogon; do wiadomo&sacute;ci, &zdot;e nieprawid&lstrok;owe dane oraz nieterminowa ich zmiana w aplikacji mo&zdot;e
+      | uniemo&zdot;liwi&cacute; poprawn&aogon; i terminow&aogon; realizacj&eogon; wyp&lstrok;aty lub spowodowa&cacute; nieprawid&lstrok;owo&sacute;ci w dokumentacji
+      | zg&lstrok;oszeniowej wzgl&eogon;dem ZUS i US, co mo&zdot;e skutkowa&cacute; konieczno&sacute;ci&aogon; korekty i uregulowaniem Data
+      | utworzenia
+      | o&sacute;wiadczenia: #{dataZlozenia} O&sacute;wiadczaj&aogon;cy: #{imieINazwisko} Forma o&sacute;wiadczenia: elektroniczna
+      | nale&zdot;nych zobowi&aogon;za&nacute; (w tym odsetek), kt&oacute;rymi zostan&eogon; obci&aogon;&zdot;ony/a.
+    td(style='width:56%;vertical-align: baseline;').column
+      | Data utworzenia o&sacute;wiadczenia: #{dataZlozenia}
+      | O&sacute;wiadczaj&aogon;cy: #{imieINazwisko} Forma o&sacute;wiadczenia: elektroniczna
+

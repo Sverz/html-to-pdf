@@ -1,0 +1,31 @@
+body {
+    font-family: 'Rubik';
+    font-size: 12px;
+    padding: 40px;
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #1B1B1B;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+table,
+td,
+tr {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 7px;
+}
+
+.column {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 0px;
+}
